@@ -5,13 +5,14 @@
     background-color:blue;
     background: rgb(61,54,196);
     background: linear-gradient(180deg, rgba(61,54,196,1) 0%, rgba(118,31,224,1) 85%);
+    /* background-color: blue; */
 }
 
 html,body{
     height: 100%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .nav{
@@ -31,6 +32,7 @@ html,body{
 
 .logo h1{
     background: none;
+    vertical-align: middle;
 }
 
 
@@ -43,6 +45,11 @@ html,body{
     background: none;
 }
 
+box-icon{
+    vertical-align: middle;
+    background: none;
+    color: white;
+}
 
 .items ul li{
     margin-right: 50px;
@@ -57,11 +64,13 @@ html,body{
     color: white;
     font-size: 18px;
     background: none;
+    transition: all .3s;
 }
 
-img{
-    background: none;
+.items ul li a:hover{
+    color: black;
 }
+
 
 .content{
     display: flex;
@@ -70,10 +79,16 @@ img{
     background: none;
     width: 100%;
     /* height: 722px; */
-    /* height: 100%; */
+    height: calc(100vh - 250px);
     flex: 1;
+    /* position: absolute; */
 }
-
+.derecha{
+    background: none;
+}
+.derecha img{
+    background: none;
+}
 .izquierda{
     display: flex;
     flex-direction: column;
